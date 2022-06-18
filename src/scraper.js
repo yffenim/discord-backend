@@ -4,7 +4,8 @@ import fetch from 'node-fetch';
 
 const TABLE_NAME = process.env.TABLE_NAME;
 const SCAPER_URL = "https://disboard.org/servers/tag/buffy";
-// const SCAPER_URL = "http://statleaders.ufc.com/";
+const success = "Good job.";
+
 
 export const scrape = async function (event, context) {
     // fetch the HTML from the UFC website
@@ -21,7 +22,7 @@ export const scrape = async function (event, context) {
   });
 
 return {
-    body: JSON.stringify({message: names}),
+    body: JSON.stringify({message: success}),
     statusCode: 200,
   };
 
