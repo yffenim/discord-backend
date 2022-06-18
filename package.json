@@ -1,0 +1,20 @@
+{
+  "name": "discord_server_search",
+  "version": "0.1.0",
+  "bin": {
+    "discord_server_search": "bin/discord_server_search.js"
+  },
+  "scripts": {
+    "build": "echo \"The build step is not required when using JavaScript!\" && exit 0",
+    "cdk": "cdk",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "aws-cdk": "2.28.1",
+    "jest": "^27.5.1"
+  },
+  "dependencies": {
+    "aws-cdk-lib": "2.28.1",
+    "constructs": "^10.0.0"
+  }
+}
